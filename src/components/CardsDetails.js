@@ -8,6 +8,7 @@ import { DLT,ADD,REMOVE } from '../redux/actions/action'
 const CardsDetails = () => {
 
   const [data,setData] = useState([]);
+  
   // console.log(data);
 
   const {id} = useParams();
@@ -57,9 +58,10 @@ const remove = (item)=>{
       <div className="container mt-2">
         <h2 className='text-center'>Iteams Details Page
         </h2>
-
+      
         <section className='container mt-3'>
           <div className="iteamsdetails">
+          
           {
             data.map((ele)=>{
               return (
